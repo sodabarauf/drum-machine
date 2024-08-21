@@ -56,4 +56,19 @@ audio {
   display: none;
 }
 
+@media (max-width: 600px) {
+  #drum-machine {
+    max-width: 100%;
+    padding: 10px;
+  }
 
+  .drum-pad {
+    padding: 20px;
+    font-size: 1.2rem;
+  }
+
+  #display {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+}
