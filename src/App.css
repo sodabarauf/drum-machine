@@ -1,38 +1,74 @@
+/* App.css */
 .App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
+}
+
+#drum-machine {
+  background-color: #444;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+}
+
+#display {
+  background-color: #222;
+  color: #61dafb;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.drum-pads {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.drum-pad {
+  background-color: #61dafb;
+  color: #282c34;
+  padding: 30px;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.drum-pad:active {
+  background-color: #21a1f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.drum-pad:hover {
+  background-color: #21a1f1;
+}
+
+audio {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #drum-machine {
+    max-width: 100%;
+    padding: 10px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .drum-pad {
+    padding: 20px;
+    font-size: 1.2rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  #display {
+    font-size: 1.5rem;
+    padding: 15px;
   }
 }
