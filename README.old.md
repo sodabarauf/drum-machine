@@ -18,7 +18,7 @@ function playSound(selector) {
 ## Demo 📸
 life demo link []
 
-![screenshot](./assets/capture_240819_234359.png)
+![screenshot](./assets/capture_240821_173539.png)
 
 ## Technologies Used 🛠️
 - HTML
